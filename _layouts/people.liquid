@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<span class="person__content">{{ page.name }} <a class="audio-link" href="/assets/{{ page.audio }}" data-name="{{ page.name }}" target="_blank">is discussing</a> {{ page.topic }}</span>
+
+<time class="person__time" datetime="{{ page.date }}">
+  <span class="hour">{{ page.date | date: "%H" }}</span><span class="minute">{{ page.date | date: "%M" }}</span> <span class="date">{{ page.date | date: '%A, %-d %B %Y' }}</span>
+</time>
+
+{% if page.lines %}
+<div class="lines">
+  {% for line in page.lines %}
+  {% include {{ line | prepend: "lines/" }} %}{{ lineUrl }}
+  {% endfor %}
+</div>
+{% endif %}

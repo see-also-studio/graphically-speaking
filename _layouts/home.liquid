@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{%- assign people = site.people | sort: 'date' -%}
+{%- assign peopleByDay = 
+  site.people | group_by_exp: "people", "people.date | date: '%A, %-d %B %Y'" -%}
+{% for day in peopleByDay %}
+  <h3>{{ day.name }}</h3>
+  <ul class="schedule">
+  {% for person in day.items %}
+    <li class="schedule__item">
+      <a href="{{ person.url }}">
+        <time datetime="{{ person.date }}"><span class="hour">{{ person.date | date: "%H" }}</span><span class="minute">{{ person.date | date: "%M" }}</span></time>
+        <span class="name">{{ person.name }}</span>
+      </a>
+  </li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+{% if page.lines %}
+  <div class="lines">
+    {% for line in page.lines %}
+    {% include {{ line | prepend: "lines/" }} %}{{ lineUrl }}
+    {% endfor %}
+  </div>
+  {% endif %}

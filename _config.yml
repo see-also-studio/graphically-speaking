@@ -1,0 +1,39 @@
+title: Graphically Speaking
+tagline: 
+description: A WIP show by Central Saint Martins’ MA Graphic Communication Design.
+
+marquee_top:
+  - "We are now off air"
+  - "Thanks for joining us!"
+  - "All broadcasts archived online 👇"
+marquee_bottom:
+  - "Graphically Speaking"
+  - "Opening times: "
+  - "Thurs 11th January 2018 6pm–10pm"
+  - "Fri 12th January 2018 12pm–7pm"
+  - "Sat 13th January 2018 10am–4pm"
+  - "Central Saint Martins, 1, Granary Building, Granary Square, Kings Cross, London, N1C 4AA"
+
+collections: 
+  people:
+    output: true
+    permalink: /people/:path/
+    sort_by: time
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "people"
+    values:
+      layout: "people"
+
+keep_files:
+  - "/dist/"
+exclude:
+  - "README.md"
+  - "package.json"
+  - "package-lock.json"
+  - "/src/"
+
+safe: true

@@ -1,0 +1,52 @@
+.analogue-clock {
+
+  > * {
+    transform-origin: 50% 50%;
+  }
+
+  line {
+    stroke: #000000;
+    fill: none;
+  }
+
+  &_hand {
+    transition-duration: 10ms;
+  }
+
+  &__hand-seconds {
+    stroke: #FF0000 !important;
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+
+  &__hand-minutes, 
+  &__hand-hours {
+    stroke-width: 7;
+  }
+
+  &__center {
+    stroke: none;
+    fill: #000000;
+  }
+
+  &__graduation {
+    stroke-width: 1;
+
+    .analogue-clock__graduation-spacer {
+      stroke: none;
+    }
+
+    &:nth-of-type(3), 
+    &:nth-of-type(6), 
+    &:nth-of-type(9), 
+    &:nth-of-type(12) {
+      stroke-width: 9;
+    }
+
+    @for $i from 1 through 12 {
+      &:nth-of-type(#{$i}) {
+        transform: rotate(#{$i * 30}deg);
+      }
+    }
+  }
+}

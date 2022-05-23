@@ -1,0 +1,50 @@
+{%- assign home = site.pages | where: 'permalink', '/' | first -%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% include page_title.liquid %}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="/dist/main.css">
+    <link rel="icon" type="image/svg+xml" href="/dist/favicon.svg">
+  </head>
+  <body data-barba="wrapper">
+    <header><h1>{{ site.title }}</h1></header>
+    <main id="site-content">
+      <section id="clock">
+        {% include clock.liquid %}
+      </section>
+      {% include player.liquid %}
+      <section id="about">
+        <h2>About</h2>
+        {{ home.content | markdownify }}
+      </section>
+      <section id="credits">
+        <h2>Credits</h2>
+        {{ home.credits | markdownify  }}
+      </section>
+      <section id="content">
+        <h2><a title="Home" href="/">Schedule</a></h2>
+        <div id="content__wrapper" data-barba="container" data-barba-namespace="{{ page.layout }}">
+          {{ content }}
+        </div>
+      </section>
+    </main>
+    <div class="marquee marquee--top">
+      <ul class="marquee__wrapper">
+      {% for item in site.marquee_top %}
+        <li>{{ item }}</li>
+      {% endfor%}
+      </ul>
+    </div>
+    <div class="marquee marquee--bottom">
+      <ul class="marquee__wrapper">
+      {% for item in site.marquee_bottom %}
+        <li>{{ item }}</li>
+      {% endfor%}
+      </ul>
+    </div>
+    <script src="/dist/main.js"></script>
+  </body>
+</html>

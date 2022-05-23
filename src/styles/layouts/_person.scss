@@ -1,0 +1,21 @@
+.person {
+  &__content, 
+  &__time {
+    display: block;
+  }
+
+  &__content {
+    font-size: 2em;
+  }
+
+  &__time {
+    margin-top: 0.5em;
+
+    .minute {
+      font-size: var(--font-size--small);
+      vertical-align: top;
+      position: relative;
+      top: 0.05em;
+    }
+  }
+}

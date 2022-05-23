@@ -1,0 +1,16 @@
+@use "normalize";
+@use "resets/custom-reset";
+
+@use "common/mq-settings";
+
+@use "common/variables";
+
+@use "components/marquee";
+@use "components/analogue-clock";
+@use "components/player";
+
+@use "common/global";
+
+
+@use "layouts/home";
+@use "layouts/person";

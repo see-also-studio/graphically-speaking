@@ -1,0 +1,27 @@
+{
+  "name": "graphically-speaking",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "watch": "webpack --watch --config webpack.dev.js"
+  },
+  "author": "See, Also",
+  "license": "ISC",
+  "devDependencies": {
+    "@barba/core": "^2.9.7",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "gsap": "^3.10.4",
+    "mini-css-extract-plugin": "^2.6.0",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "sass-mq": "^6.0.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-merge": "^5.8.0"
+  }
+}
