@@ -28,6 +28,9 @@ defaults:
     values:
       layout: "people"
 
+kramdown:
+  auto_ids: false
+
 keep_files:
   - "/dist/"
 exclude:

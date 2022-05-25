@@ -14,6 +14,7 @@ credits: >-
 
   Web design and concept by Lucy Maria, Jad Sawaya, Mike Stevens.
 ---
+## About
 Central Saint Martins’ MA Graphic Communication Design have spent the last six months developing a thought process behind a particular stream of work. Arriving at the point where this development will be used to springboard into the creation of the work itself, MA GCD presents ‘Graphically Speaking’ — a ‘Work in Progress’ show highlighting the formation and development of these ideas.
 
 Graphically Speaking published these ideas via live audio interviews of each class member, that ran as a live broadcast from Central Saint Martins for the duration of the show.

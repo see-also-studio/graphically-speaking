@@ -17,13 +17,14 @@
       </section>
       {% include player.liquid %}
       <section id="about">
-        <h2>About</h2>
         {{ home.content | markdownify }}
       </section>
+      {% if home.credits %}
       <section id="credits">
         <h2>Credits</h2>
         {{ home.credits | markdownify  }}
       </section>
+      {% endif %}
       <section id="content">
         <h2><a title="Home" href="/">Schedule</a></h2>
         <div id="content__wrapper" data-barba="container" data-barba-namespace="{{ page.layout }}">
