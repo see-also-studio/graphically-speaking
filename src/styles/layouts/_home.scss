@@ -113,6 +113,12 @@
   }
 }
 
+#about {
+  > * + * {
+    margin-top: 1rem;
+  }
+}
+
 .schedule {
   columns: 2;
   margin-top: 0.15em;
