@@ -36,3 +36,17 @@
     }
   }
 }
+
+@media (prefers-reduced-motion) {
+  .marquee { 
+    &__wrapper {
+      animation-play-state: paused;
+    }
+
+    &:hover {
+      .marquee__wrapper {
+        animation-play-state: running;
+      }
+    }
+  }
+}
