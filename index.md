@@ -21,4 +21,6 @@ Special thanks to David Charlesworth, Paul Cherry, Jeremy Keenan, Caroline List,
 
 Graphic design by Aizhan Abdrakhmanova, <a href="https://czelmatyas.co/">Mátyás Czél</a> and <a href="https://www.paulasobat.com">Paula Sobat</a>.
 
-Web design and concept by <a href="http://lucymaria.co.uk">Lucy Maria</a>, <a href="http://lucymaria.co.uk">Jad Sawaya</a>, <a href="https://mikestevens.co.uk/">Mike Stevens</a>.
+Web design and concept by <a href="http://lucymaria.co.uk">Lucy Maria</a>, Jad Sawaya, <a href="https://mikestevens.co.uk/">Mike Stevens</a>.
+
+Updated archive and web development by Lucy Maria & Mike Stevens as part of <a href="https://see-also.com">See, Also Studio</a>, 2022.
