@@ -128,8 +128,17 @@
 }
 
 #about {
+  h2 {
+    font-size: var(--font-size--small);
+    text-transform: uppercase;
+  }
+
   > * + * {
     margin-top: 1rem;
+  }
+
+  > * + h2 {
+    margin-top: 2rem;
   }
 }
 
