@@ -17,7 +17,7 @@ collections:
   people:
     output: true
     permalink: /people/:path/
-    sort_by: time
+    sort_by: date
 
 defaults:
   -
