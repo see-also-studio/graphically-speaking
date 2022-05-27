@@ -7,7 +7,7 @@ lines:
   - "jad-sawaya-line-02.svg"
 ---
 
-<img src="https://graphicallyspeaking.co.uk/images/2line%20web%20gs_bijelo_2x.png"> 
+<img src="https://graphicallyspeaking.co.uk/images/2line%20web%20gs_bijelo_2x.png" style="width:500px"> 
 
 ## About
 (01. 2018) Central Saint Martins’ MA Graphic Communication Design have spent the last six months developing a thought process behind a particular stream of work. Arriving at the point where this development will be used to springboard into the creation of the work itself, MA GCD presents ‘Graphically Speaking’ — a ‘Work in Progress’ show highlighting the formation and development of these ideas.
