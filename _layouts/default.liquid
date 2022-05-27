@@ -26,8 +26,8 @@
       </section>
       {% endif %}
       <section id="content">
-        <h2><a title="Home" href="/">Schedule</a></h2>
         <div id="content__wrapper" data-barba="container" data-barba-namespace="{{ page.layout }}">
+          {% include navigation.liquid %}
           {{ content }}
         </div>
       </section>

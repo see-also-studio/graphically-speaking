@@ -1,0 +1,13 @@
+<nav class="navigation">
+{%- if page.layout == "home" -%}
+  <h2 class="navigation__home">Schedule</h2>
+{%- elsif page.layout == "people" -%}
+  <h2 class="navigation__home"><a title="Home" href="/">Back to Schedule</a></h2>
+  {%- if page.previous.url -%}
+    <a class="navigation__prev" href="{{ page.previous.url }}" title="{{ page.previous.title }}"></a>
+  {%- endif  -%}
+  {%- if page.next.url -%}
+    <a class="navigation__next" href="{{ page.next.url }}" title="{{ page.next.title }}"></a>
+  {%- endif  -%}
+{%- endif -%}
+</nav>

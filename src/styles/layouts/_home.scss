@@ -103,18 +103,6 @@
 }
 
 #content {
-  h2 {
-    text-align: center;
-
-    a {
-      color: black;
-
-      &:not(:hover) {
-        text-decoration: none;
-      }
-    }
-  }
-
   h3 {
     font-size: var(--font-size--small);
   }
