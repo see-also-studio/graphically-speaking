@@ -16,6 +16,12 @@
         {% include clock.liquid %}
       </section>
       {% include player.liquid %}
+      <section id="content">
+        <div id="content__wrapper" data-barba="container" data-barba-namespace="{{ page.layout }}">
+          {% include navigation.liquid %}
+          {{ content }}
+        </div>
+      </section>
       <section id="about">
         {{ home.content | markdownify }}
       </section>
@@ -25,12 +31,6 @@
         {{ home.credits | markdownify  }}
       </section>
       {% endif %}
-      <section id="content">
-        <div id="content__wrapper" data-barba="container" data-barba-namespace="{{ page.layout }}">
-          {% include navigation.liquid %}
-          {{ content }}
-        </div>
-      </section>
     </main>
     <div class="marquee marquee--top">
       <ul class="marquee__wrapper">
