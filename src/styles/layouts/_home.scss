@@ -103,6 +103,9 @@
 }
 
 #content {
+  border-bottom: var(--border);
+  border-right: dotted 4px var(--color--fg);
+
   h3 {
     font-size: var(--font-size--small);
   }
