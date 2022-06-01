@@ -30,6 +30,7 @@
   &__prev, 
   &__next {
     width: min-content;
+    line-height: var(--font-size--small);
   }
 
   &__prev {
