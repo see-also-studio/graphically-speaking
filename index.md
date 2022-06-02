@@ -7,7 +7,7 @@ lines:
   - "jad-sawaya-line-02.svg"
 ---
 
-<img src="https://graphicallyspeaking.co.uk/images/2line%20web%20gs_bijelo_2x.png" style="width:500px"> 
+![Graphically Speaking logo](/assets/logo.png){:width="1888" height="756"}
 
 ## About
 (01. 2018) Central Saint Martins’ MA Graphic Communication Design have spent the last six months developing a thought process behind a particular stream of work. Arriving at the point where this development will be used to springboard into the creation of the work itself, MA GCD presents ‘Graphically Speaking’ — a ‘Work in Progress’ show highlighting the formation and development of these ideas.
@@ -22,8 +22,8 @@ As part of the WIP show, we are not emphasising final work(s) but the discussion
 ## Credits
 Special thanks to David Charlesworth, Paul Cherry, Jeremy Keenan, Caroline List, Michael McShane, Billie Muraben and Kate Pelen.
 
-Graphic design by Aizhan Abdrakhmanova, <a href="https://czelmatyas.co/">Mátyás Czél</a> and <a href="https://www.paulasobat.com">Paula Sobat</a>.
+Graphic design by Aizhan Abdrakhmanova, [Mátyás Czél](https://czelmatyas.co/){:target="_blank" rel="noopener"} and [Paula Sobat](https://www.paulasobat.com/){:target="_blank" rel="noopener"}.
 
-Web design and concept by <a href="http://lucymaria.co.uk">Lucy Maria</a>, Jad Sawaya, <a href="https://mikestevens.co.uk/">Mike Stevens</a>.
+Web design and concept by [Lucy Maria](http://lucymaria.co.uk/){:target="_blank" rel="noopener"}, Jad Sawaya, [Mike Stevens](https://www.mikestevens.co.uk/){:target="_blank" rel="noopener"}.
 
-Updated archive and web development by Lucy Maria & Mike Stevens as part of <a href="https://see-also.com">See, Also Studio</a>, 2022.
+Updated archive and web development by Lucy Maria & Mike Stevens as part of [See, Also Studio](https://www.see-also.com/){:target="_blank" rel="noopener"}, 2022.
