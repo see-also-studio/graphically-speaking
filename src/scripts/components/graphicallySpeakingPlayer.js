@@ -8,8 +8,9 @@ export class GraphicallySpeakingPlayer {
     this.info2 = this.el.querySelector('.player__info2');
 
     this.updatePlayingStatus();
-    this.controls.addEventListener('click', () => this.toggle());
+    //this.controls.addEventListener('click', () => this.toggle());
     this.audioPlayer.addEventListener('ended', () => this.ended());
+    this.el.addEventListener('click', () => this.toggle());
   }
 
   toggle() {
