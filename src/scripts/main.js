@@ -81,7 +81,7 @@ function pageChange() {
 }
 
 document.querySelectorAll('.marquee').forEach((el) => {
-  new Marquee(el, 70);
+  new Marquee(el, 70, false, true);
 });
 
 document.querySelectorAll('.analogue-clock').forEach(el => {
