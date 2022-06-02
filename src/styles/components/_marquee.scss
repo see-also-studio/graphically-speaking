@@ -25,6 +25,17 @@
     }
   }
 
+  &--paused {
+    .marquee__wrapper {
+      animation-play-state: paused;
+    }
+
+    &:hover {
+      .marquee__wrapper {
+        animation-play-state: running;
+      }
+    }
+  }
 
   @keyframes scroll {
     0%   {

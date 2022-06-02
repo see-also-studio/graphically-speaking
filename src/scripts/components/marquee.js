@@ -1,9 +1,10 @@
 export class Marquee {
-  constructor(el, speed = 10, reverse = false) {
+  constructor(el, speed = 10, reverse = false, startPaused = false) {
     this.el = el;
     this.contentEl = this.el.querySelector('.marquee__wrapper');
     this.speed = speed;
     this.reverse = reverse;
+    this.startPaused = startPaused;
 
     this.contentEl.style.setProperty('animation-play-state', 'paused')
 
@@ -15,6 +16,10 @@ export class Marquee {
   init() {
     if (this.reverse) {
       this.el.classList.add('marquee--reverse')
+    }
+
+    if (this.startPaused) {
+      this.el.classList.add('marquee--paused');
     }
     
     this.reCalc();
