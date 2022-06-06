@@ -1,3 +1,5 @@
+@use "mq";
+
 .person {
   &__content, 
   &__time {
@@ -5,7 +7,12 @@
   }
 
   &__content {
-    font-size: 3em;
+    font-size: 2em;
+
+    @include mq.mq($from: small) {
+      font-size: 3em;
+    }
+
   }
 
   &__time {
