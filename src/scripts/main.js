@@ -87,3 +87,8 @@ document.querySelectorAll('.marquee').forEach((el) => {
 document.querySelectorAll('.analogue-clock').forEach(el => {
   new AnalogueClock(el);
 });
+
+document.querySelector('.player__intermission-text').childNodes.forEach(function(el, i) {
+  console.log('test');
+  el.style.setProperty('animation-delay', -160 * i + 'ms');
+});

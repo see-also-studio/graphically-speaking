@@ -45,6 +45,7 @@
     max-height: calc((1em * var(--line-height)) + (var(--marquee-padding) * 2));
     overflow: visible;
     padding: var(--marquee-padding) calc(var(--marquee-padding) * 2);
+    color: red;
 
     &::before {
       background: red;
@@ -62,6 +63,34 @@
   &.paused {
     audio[src="/assets/intermission.mp3"] {
       animation-play-state: paused;
+    }
+  }
+
+  &.playing {
+    audio[src="/assets/intermission.mp3"] ~ .player__controls {
+      .player__intermission-text {
+        > * {
+          display: inline-block;
+          animation: wave;
+          animation-duration: 2.5s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+        }
+      }
+    }
+  }
+
+  @keyframes wave {
+    from   {
+      transform: translate3d(0, -0.3em, 0);
+    }
+
+    50% {
+      transform: translate3d(0, 0.5em, 0);
+    }
+
+    to {
+      transform: translate3d(0, -0.3em, 0);
     }
   }
 }
