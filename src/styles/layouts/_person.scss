@@ -13,6 +13,9 @@
       font-size: 3em;
     }
 
+    a {
+      cursor: url("../images/play-icon.svg") 15 15, pointer;
+    }
   }
 
   &__time {
