@@ -5,6 +5,10 @@ lines:
   - "mike-stevens-line-01.svg"
   - "lucy-maria-line-02.svg"
   - "jad-sawaya-line-02.svg"
+  - "daniela-fardilha-line-02.svg"
+  - "catarina-sacramento-line-02.svg"
+  - "matyas-czel-line-03.svg"
+  - "paul-oreilly-line-01.svg"
 ---
 
 ![Graphically Speaking logo](/assets/logo.png){:width="1888" height="756" style="margin-top:2em"}
