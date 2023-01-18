@@ -1,6 +1,7 @@
 .marquee {  
   display: flex;
   flex-wrap: nowrap;
+  overflow: hidden;
 
   &__wrapper {
     display: flex;

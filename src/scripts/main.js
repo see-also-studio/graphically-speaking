@@ -1,5 +1,5 @@
 import barba from '@barba/core';
-import { Marquee } from './components/marquee';
+import { marquee } from './components/marquee';
 import { GraphicallySpeakingPlayer } from './components/graphicallySpeakingPlayer'; 
 import { AnalogueClock } from './components/clock';
 import { gsap } from 'gsap';
@@ -81,7 +81,12 @@ function pageChange() {
 }
 
 document.querySelectorAll('.marquee').forEach((el) => {
-  new Marquee(el, 70, false, true);
+  marquee(el, 
+    {
+      speed: 70,
+      startPaused: true,
+    }
+  );
 });
 
 document.querySelectorAll('.analogue-clock').forEach(el => {

@@ -1,49 +1,61 @@
-export class Marquee {
-  constructor(el, speed = 10, reverse = false, startPaused = false) {
-    this.el = el;
-    this.contentEl = this.el.querySelector('.marquee__wrapper');
-    this.speed = speed;
-    this.reverse = reverse;
-    this.startPaused = startPaused;
+export function marquee(el, settings) {
+  const speed = settings.speed || 10;
+  const reverse = settings.reverse || false;
+  const startPaused = settings.startPaused || false;
+  let contentEl = el.querySelector('.marquee__wrapper');
+  const contentBackup = contentEl.innerHTML;
+  let windowWidth = window.innerWidth;
+  contentEl.style.setProperty('.animation-play-state', 'paused');
+  init();
+  window.addEventListener('resize', function() {
+    if (windowWidth !== window.innerWidth) {
+      recalc();
+      windowWidth = window.innerWidth;
+    }
+  });
+  window.addEventListener('load', recalc);
 
-    this.contentEl.style.setProperty('animation-play-state', 'paused')
-
-    this.init();
-    window.addEventListener('resize', () => this.reCalc());
-    window.addEventListener('load', () => this.reCalc());
-  }
-  
-  init() {
-    if (this.reverse) {
-      this.el.classList.add('marquee--reverse')
+  function init() {
+    if (reverse) {
+      el.classList.add('marquee--reverse');
     }
 
-    if (this.startPaused) {
-      this.el.classList.add('marquee--paused');
+    if (startPaused) {
+      el.classList.add('marquee--paused');
     }
-    
-    this.reCalc();
+
+    recalc();
   }
 
-  reCalc() {
-    this.contentEl.style.animation = 'none';
-    const outerWidth = this.el.offsetWidth;
-    const innerWidth = this.contentEl.offsetWidth; /* calling offsetWidth triggers reflow */
+  function recalc() {
+    const outerWidth = el.offsetWidth;
+    const innerWidth = contentEl.offsetWidth; /* calling offsetWidth triggers reflow */
     const clones = Math.ceil(outerWidth / innerWidth);
-    const duration = innerWidth / this.speed;
+    const duration = innerWidth / speed;
 
-    this.contentEl.style.animation = null;
-
-    this.el.querySelectorAll('.clone').forEach(function(el) {
+    el.querySelectorAll('.clone').forEach(function(el) {
       el.remove();
     });
 
+    const tempContent = contentEl.cloneNode(true);
+    contentEl.remove();
+    contentEl = el.appendChild(tempContent);
+
     for (let i = 0; i < clones; i++) {
-      const clone = this.contentEl.cloneNode(true);
+      const clone = contentEl.cloneNode(true);
       clone.classList.add('clone');
-      this.contentEl.after(clone);
+      contentEl.after(clone);
     }
 
-    this.el.style.setProperty('--duration', duration + 's');
+    el.style.setProperty('--duration', duration + 's');
+  }
+
+  function updateContent(content = contentBackup) {
+    contentEl.innerHTML = content;
+    recalc();
+  }
+
+  return {
+    updateContent,
   }
 }
