@@ -64,29 +64,19 @@ section {
   }
 }
 
-.marquee {
-  --gap: 4em;
-
+.info {
   position: fixed;
   left: 0;
   right: 0;
+  width: 100%;
+  display: flex;
   background: var(--color--bg);
   border-top: var(--border);
   border-bottom: var(--border);
   text-transform: uppercase;
   padding-top: var(--marquee-padding);
   padding-bottom: var(--marquee-padding);
-
   z-index: 50;
-
-  &__wrapper {
-    gap: var(--gap);
-    padding-left: var(--gap);
-
-    > * {
-      min-width: max-content;
-    }
-  }
 
   &--top {
     top: 0;
@@ -94,6 +84,56 @@ section {
 
   &--bottom {
     bottom: 0;
+  }
+}
+
+.marquee {
+  --gap: 4em;
+
+  &__wrapper {
+    gap: var(--gap);
+    padding-left: var(--gap);
+
+  }
+
+  &__item {
+    min-width: max-content;
+  }
+}
+
+.intermission-button {
+  color: red;
+  text-transform: inherit;
+  white-space: nowrap;
+  padding-left: calc(var(--marquee-padding) * 2);
+  padding-right: calc(var(--marquee-padding) * 2);
+
+  &:not(.playing) {
+    .wavy-text {
+      > * {
+        animation-name: unset;
+      }
+    }
+  }
+
+  &:hover {
+    .wavy-text {
+      > * {
+        animation-name: wave;
+      }
+    }
+  }
+
+  &::before {
+    background: red;
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    vertical-align: top;
+    transition-duration: 500ms;
+    margin-top: 0.065em;
   }
 }
 

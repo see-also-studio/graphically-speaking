@@ -32,22 +32,26 @@
       </section>
       {% endif %}
     </main>
-    <div class="marquee marquee--top">
-      <ul class="marquee__wrapper">
-      {% for item in site.marquee_top %}
-        <li>{{ item }}</li>
-      {% endfor%}
-      </ul>
+    <div class="info info--top">
       <button class="intermission-button">
         <span class="wavy-text"><span>I</span><span>n</span><span>t</span><span>e</span><span>r</span><span>m</span><span>i</span><span>s</span><span>s</span><span>i</span><span>o</span><span>n</span></span>
       </button>
+      <div class="marquee">
+        <ul class="marquee__wrapper">
+        {% for item in site.marquee_top %}
+          <li>{{ item }}</li>
+        {% endfor%}
+        </ul>
+      </div>
     </div>
-    <div class="marquee marquee--bottom">
-      <ul class="marquee__wrapper">
-      {% for item in site.marquee_bottom %}
-        <li>{{ item }}</li>
-      {% endfor%}
-      </ul>
+    <div class="info info--bottom">
+      <div class="marquee">
+        <ul class="marquee__wrapper">
+        {% for item in site.marquee_bottom %}
+          <li class="marquee__item">{{ item }}</li>
+        {% endfor%}
+        </ul>
+      </div>
     </div>
     <script src="/dist/main.js"></script>
   </body>
