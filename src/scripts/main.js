@@ -97,3 +97,7 @@ document.querySelector('.wavy-text').childNodes.forEach(function(el, i) {
   console.log('test');
   el.style.setProperty('animation-delay', -160 * i + 'ms');
 });
+
+document.querySelector('.intermission-button').addEventListener('click', function() {
+  graphicallySpeakingPlayer.playAudio('/assets/intermission.mp3', 'Now playing', 'Intermission');
+});

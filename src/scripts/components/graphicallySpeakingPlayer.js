@@ -6,6 +6,7 @@ export class GraphicallySpeakingPlayer {
     this.controls = this.el.querySelector('.player__controls');
     this.info1 = this.el.querySelector('.player__info1');
     this.info2 = this.el.querySelector('.player__info2');
+    this.intermissionButton = document.body.querySelector('.intermission-button');
 
     this.updatePlayingStatus();
     //this.controls.addEventListener('click', () => this.toggle());
@@ -25,7 +26,6 @@ export class GraphicallySpeakingPlayer {
 
   ended() {
     console.log('audio ended');
-    console.log(this.audioPlayer.getAttribute('src'));
     if (this.audioPlayer.getAttribute('src') !== '/assets/intermission.mp3') {
       console.log('Go to intermission');
       this.audioPlayer.setAttribute('src', '/assets/intermission.mp3');
@@ -40,6 +40,11 @@ export class GraphicallySpeakingPlayer {
     this.playing = !this.audioPlayer.paused;
     this.el.classList.toggle('playing', this.playing);
     this.el.classList.toggle('paused', !this.playing);
+
+    const intermissionPlaying = this.playing && this.audioPlayer.getAttribute('src') === '/assets/intermission.mp3' ? true: false;
+    this.intermissionButton.classList.toggle('playing', intermissionPlaying);
+    
+    console.log((this.playing ? 'Playing' : 'Paused') + ', ' + this.audioPlayer.getAttribute('src'));
   }
 
   playAudio(src, info1, info2) {

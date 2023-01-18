@@ -32,12 +32,12 @@ section {
 }
 
 .player {
-  > * {
-    display: block;
-  }
-
   &__controls {
-    text-transform: uppercase;
+    flex-grow: 1;
+    
+    > * {
+      display: block;
+    }
   }
   
   &__info1,
