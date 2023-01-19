@@ -29,6 +29,18 @@
   }
 }
 
+.widgets {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: var(--color--bg);
+
+  @include mq.mq($until: small) {
+    position: sticky;
+    top: calc(var(--marquee-padding) * 2 + 1.15rem);
+    z-index: 35;
+  }
+}
+
 #clock, 
 #player {
   grid-column-end: span 1;
@@ -41,6 +53,7 @@
 }
 
 #clock {
+  display: flex;
   padding: 1.5em;
 }
 

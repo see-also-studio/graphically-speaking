@@ -12,10 +12,12 @@
   <body data-barba="wrapper">
     <header><h1>{{ site.title }}</h1></header>
     <main id="site-content">
-      <section id="clock">
-        {% include clock.liquid %}
-      </section>
-      {% include player.liquid %}
+      <div class="widgets">
+        <section id="clock">
+          {% include clock.liquid %}
+        </section>
+        {% include player.liquid %}
+      </div>
       <section id="content">
         <div id="content__wrapper" data-barba="container" data-barba-namespace="{{ page.layout }}">
           {% include navigation.liquid %}
