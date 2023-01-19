@@ -84,7 +84,6 @@ document.querySelectorAll('.marquee').forEach((el) => {
   marquee(el, 
     {
       speed: 70,
-      startPaused: true,
     }
   );
 });
