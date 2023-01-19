@@ -107,7 +107,8 @@
       gap: 1em;
 
       time {
-        width: 2.5em;
+        width: 2em;
+        flex-shrink: 0;
       }
 
       .minute {
