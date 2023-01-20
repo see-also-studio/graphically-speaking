@@ -38,6 +38,7 @@
     position: sticky;
     top: calc(var(--marquee-padding) * 2 + 1.15rem);
     z-index: 35;
+    grid-template-columns: 58% 42%;
   }
 }
 
@@ -55,10 +56,23 @@
 #clock {
   display: flex;
   padding: 1.5em;
+
+  @include mq.mq($until: small) {
+    border-left: var(--border);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 #player {
-  border-left: var(--border);
+  @include mq.mq($until: small) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  @include mq.mq($from: small) {
+    border-left: var(--border);
+  }
 }
 
 #content {

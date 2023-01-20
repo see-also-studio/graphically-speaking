@@ -42,7 +42,19 @@ section {
   
   &__info1,
   &__info2 {
-    font-size: 1.5em;
+    font-size: 0.9em;
+
+    @include mq.mq($from: 500px, $until: small) {
+      font-size: 1.2em;
+    }
+
+    @include mq.mq($from: small, $until: 1000px) {
+      font-size: 1em;
+    }
+
+    @include mq.mq($from: 1000px) {
+      font-size: 1.4em;
+    }
   }
 
   &__info1 {
