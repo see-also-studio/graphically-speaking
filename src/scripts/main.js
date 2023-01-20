@@ -58,13 +58,24 @@ function pageChange() {
 
   // Run shapes
   const linesContainer = document.querySelector('.lines');
-  let lines = document.querySelectorAll('.lines svg');
+  const lines = linesContainer.children;
+
+  // Shuffle and remove all but first 3 lines
+  if (lines.length > 3) {
+    console.log('run line shuffle');
+    for (let i = lines.length; i >= 0; i--) {
+      linesContainer.appendChild(lines[Math.random() * i | 0]);
+    }
+  
+    for (let i = lines.length; i > 3; i--) {
+      linesContainer.removeChild(linesContainer.lastChild);
+    }
+  }
+
   const randXSpread = randomArray(0, 2);
   const randYSpread = randomArray(0, 2);
-  
-  
 
-  lines.forEach((line, i) => {
+  [...lines].forEach((line, i) => {
     const handle = line.querySelectorAll('svg > *');
 
     line.style.setProperty('--left', (randXSpread[i % 3] * (20+20)) + (Math.floor(Math.random() * 21)));
