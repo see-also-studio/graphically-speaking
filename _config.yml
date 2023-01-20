@@ -16,7 +16,7 @@ marquee_bottom:
 collections: 
   people:
     output: true
-    permalink: /people/:path/
+    permalink: /:path/
     sort_by: date
 
 defaults:
