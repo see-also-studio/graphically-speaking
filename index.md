@@ -32,9 +32,8 @@ _Graphically Speaking_.
 <img alt="A person wearing white gloves preparing items for the exhibition" data-src="/assets/images/UNADJUSTEDNONRAW_thumb_801.jpg">
 <img alt="An open drawer in a filing cabinet" data-src="/assets/images/UNADJUSTEDNONRAW_thumb_803.jpg">
 <img alt="Four filing cabinets" data-src="/assets/images/26067792_141577916517632_4648664789197783040_n_17845265113229192.jpeg">
-<video data-src="/assets/images/26200120_168499073924178_8060038887277330432_n_17889426274164830.mp4" autoplay loop muted>
-<video data-src="/assets/images/26215847_2034009583282493_4813282458927628288_n_17918427079044649.mp4" autoplay loop muted>
-
+<video data-src="" autoplay loop muted></video>
+<video data-src="/assets/images/26215847_2034009583282493_4813282458927628288_n_17918427079044649.mp4" autoplay loop muted></video>
 </div>
 
 ## Credits
