@@ -1,0 +1,51 @@
+@function css-function( $function, $values... ) {
+	@return
+		$function
+		+ unquote( '(' )
+		+ $values
+		+ unquote( ')' )
+	;
+}
+
+@function css-max( $values... ) {
+	@return css-function( max, $values );
+}
+
+.object-scatter-items {
+  --size: 10em;
+
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  pointer-events: none;
+
+  > * {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    top: css-max(calc(0 * var(--size)), calc(((100% - var(--size)) / 100) * var(--random-top)));
+    left: css-max(calc(0 * var(--size)), calc(((100% - var(--size)) / 100) * var(--random-left)));
+    pointer-events: none;
+    transition-duration: 300ms;
+    transition-delay: calc(var(--delay) * 0.7ms);
+    transition-property: opacity, transform;
+    object-fit: contain;
+
+    opacity: 0;
+    transform: scale(0.9, 0.9);
+  }
+
+  &[active] {
+    pointer-events: auto;
+
+    > * {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+}
+

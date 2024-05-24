@@ -5,6 +5,7 @@ import { AnalogueClock } from './components/clock';
 import { gsap } from 'gsap';
 import { Draggable } from 'gsap/Draggable';
 import { randomArray } from './modules/randomArray';
+import { objectScatter } from './modules/objectScatter';
 
 gsap.registerPlugin(Draggable);
 
@@ -109,4 +110,13 @@ document.querySelector('.wavy-text').childNodes.forEach(function(el, i) {
 
 document.querySelector('.intermission-button').addEventListener('click', function() {
   graphicallySpeakingPlayer.playAudio('/assets/intermission.mp3', 'Now playing', 'Intermission');
+});
+
+document.querySelectorAll('.object-scatter').forEach(function(el) {
+  el.addEventListener('click', function(event) {
+    event.preventDefault();
+    const targetSelector = event.target.getAttribute('data-object-scatter-target');
+    const targetEl = document.querySelector(targetSelector);
+    objectScatter(targetEl);
+  });
 });
