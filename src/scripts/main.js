@@ -4,7 +4,7 @@ import { GraphicallySpeakingPlayer } from './components/graphicallySpeakingPlaye
 import { AnalogueClock } from './components/clock';
 import { gsap } from 'gsap';
 import { Draggable } from 'gsap/Draggable';
-import { randomArray, shuffleArray } from './modules/functions';
+import { randomArray } from './modules/randomArray';
 
 gsap.registerPlugin(Draggable);
 
@@ -104,7 +104,6 @@ document.querySelectorAll('.analogue-clock').forEach(el => {
 });
 
 document.querySelector('.wavy-text').childNodes.forEach(function(el, i) {
-  console.log('test');
   el.style.setProperty('animation-delay', -160 * i + 'ms');
 });
 
