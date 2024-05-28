@@ -1,7 +1,8 @@
 import { randomFromRange } from "./randomFromRange";
 import { randomArray } from "./randomArray";
+import { minMax } from "./minMax";
 
-export function objectScatter(el) {
+export function objectScatter(el, {centerSingleOnClick = false, x, y, size} = {}) {
   el.addEventListener('click', imageRemove);
   el.addEventListener('wheel', imageRemove, { passive: true });
   el.setAttribute('active', 'active');
@@ -10,16 +11,23 @@ export function objectScatter(el) {
   const zonesY = randomArray(1, items.length);
   const interval = 100 / items.length;
   const delay = randomArray(0, items.length - 1);
+  let posX, posY;
+  if (centerSingleOnClick) {
+    posX = minMax(x / window.innerWidth * 100, 0, 100);
+    posY = minMax(y / window.innerHeight * 100, 0, 100);
+  }
 
   [...items].forEach(function(item, i, arr) {
     const random = {
-      left: randomFromRange(zonesX[i] * interval - ((interval / 4) * 3), zonesX[i] * interval - interval / 4),
-      top: randomFromRange(zonesY[i] * interval - ((interval / 4) * 3), zonesY[i] * interval - interval / 4),
+      left: centerSingleOnClick ? posX : randomFromRange(zonesX[i] * interval - ((interval / 4) * 3), zonesX[i] * interval - interval / 4),
+      top: centerSingleOnClick ? posY : randomFromRange(zonesY[i] * interval - ((interval / 4) * 3), zonesY[i] * interval - interval / 4),
       delay: delay[i],
     };
-    const styles = '--random-top: ' + random.top + '; ' +
-                   '--random-left: ' + random.left + ';' +
-                   '--delay: ' + random.delay * 100 + ';';
+    const styles = `--random-top: ${random.top};
+      --random-left: ${random.left};
+      --delay: ${random.delay * 100};
+      ${(size ? '--size: ' + size + ';' : '')}`;
+
 
     item.style.cssText = styles;
 
