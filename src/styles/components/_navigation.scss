@@ -22,7 +22,8 @@
 
     a {
       text-decoration-line: underline;
-      text-decoration-style: dashed;
+      text-decoration-style: dotted;
+      text-decoration-thickness: 0.12em;
     }
 
     &.back {
