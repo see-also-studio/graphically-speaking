@@ -1,3 +1,5 @@
+@use "mq";
+
 @function css-function( $function, $values... ) {
 	@return
 		$function
@@ -12,7 +14,13 @@
 }
 
 .object-scatter-items {
-  --size: 10em;
+  @include mq.mq($until: small) {
+    --size: 10em;
+  }
+
+  @include mq.mq($from: small) {
+    --size: 14em;
+  }
 
   position: fixed;
   margin: 0;
