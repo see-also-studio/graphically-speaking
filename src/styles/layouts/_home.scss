@@ -132,9 +132,14 @@
         top: 0.05em;
       }
 
+      .name {
+        transition-property: color;
+        transition-duration: 500ms;
+      }
+
       &:hover {
         .name {
-          text-decoration: underline;
+          color: blue;
         }
       }
     }
