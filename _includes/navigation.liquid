@@ -2,7 +2,7 @@
 {%- if page.layout == "home" -%}
   <h2 class="navigation__home">Schedule</h2>
 {%- elsif page.layout == "people" -%}
-  <h2 class="navigation__home"><a title="Home" href="/">Back to Schedule</a></h2>
+  <h2 class="navigation__home back"><a title="Home" href="/">Back to Schedule</a></h2>
   {%- if page.previous.url -%}
     <a class="navigation__prev" href="{{ page.previous.url }}" title="{{ page.previous.title }}"></a>
   {%- endif  -%}
