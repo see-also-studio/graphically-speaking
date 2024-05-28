@@ -20,7 +20,13 @@ body {
 
 a {
   color: blue;
-  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.075em;
+  text-underline-offset: 0.12em;
+
+  &.no-underline {
+    text-decoration: none;
+  }
 }
 
 h1 {
