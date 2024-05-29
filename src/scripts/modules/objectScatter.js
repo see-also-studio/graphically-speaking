@@ -2,10 +2,9 @@ import { randomFromRange } from "./randomFromRange";
 import { randomArray } from "./randomArray";
 import { minMax } from "./minMax";
 
-export function objectScatter(el, {centerSingleOnClick = false, x, y, size} = {}) {
+export function objectScatter(el, {centerSingleOnClick = false, x, y, size, shuffle = false} = {}) {
   el.addEventListener('click', imageRemove);
   el.addEventListener('wheel', imageRemove, { passive: true });
-  el.setAttribute('active', 'active');
   const items = el.children;
   const zonesX = randomArray(1, items.length);
   const zonesY = randomArray(1, items.length);
@@ -15,6 +14,12 @@ export function objectScatter(el, {centerSingleOnClick = false, x, y, size} = {}
   if (centerSingleOnClick) {
     posX = minMax(x / window.innerWidth * 100, 0, 100);
     posY = minMax(y / window.innerHeight * 100, 0, 100);
+  }
+
+  if (shuffle) {
+    for (let i = items.length; i >= 0; i--) {
+      el.appendChild(items[Math.random() * i | 0]);
+    }
   }
 
   [...items].forEach(function(item, i, arr) {
@@ -27,7 +32,6 @@ export function objectScatter(el, {centerSingleOnClick = false, x, y, size} = {}
       --random-left: ${random.left};
       --delay: ${random.delay * 100};
       ${(size ? '--size: ' + size + ';' : '')}`;
-
 
     item.style.cssText = styles;
 
@@ -42,6 +46,9 @@ export function objectScatter(el, {centerSingleOnClick = false, x, y, size} = {}
       }
     }
   });
+  setTimeout(() => {
+    el.setAttribute('active', 'active');
+  }, 50);
 }
 
 function imageRemove(event) {
