@@ -32,11 +32,12 @@
   pointer-events: none;
 
   > * {
+    --width: calc(var(--size) * 0.75);
     position: absolute;
-    width: var(--size);
+    width: var(--width);
     height: var(--size);
     top: css-max(calc(0 * var(--size)), calc(((100% - var(--size)) / 100) * var(--random-top)));
-    left: css-max(calc(0 * var(--size)), calc(((100% - var(--size)) / 100) * var(--random-left)));
+    left: css-max(calc(0 * var(--width)), calc(((100% - var(--width)) / 100) * var(--random-left)));
     pointer-events: none;
     transition-duration: 300ms;
     transition-delay: calc(var(--delay) * 0.7ms);
