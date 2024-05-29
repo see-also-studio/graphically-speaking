@@ -113,6 +113,7 @@ a.object-scatter {
   transition-property: color;
   transition-duration: 500ms;
   text-decoration-color: black;
+  cursor: alias;
 
   &:hover {
     color: blue;
