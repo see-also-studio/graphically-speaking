@@ -21,13 +21,13 @@ lines:
 ## About
 (01. 2018) Central Saint Martins’ [MA Graphic Communication Design](https://www.arts.ac.uk/subjects/communication-and-graphic-design/postgraduate/ma-graphic-communication-design-csm){:target="_blank" rel="noopener"} have spent the last six months developing a thought process behind a particular stream of work. Arriving at the point where this development will be used to springboard into the creation of the work itself, MA GCD presents _Graphically Speaking_ — a ‘Work in Progress’ show highlighting the formation and development of these ideas.
 
-_Graphically Speaking_ published these ideas via live audio interviews of each class member, that ran as a live broadcast from Central Saint Martins for the duration of the show.
+(02. 2018) _Graphically Speaking_ published these ideas via live audio interviews of each class member, running as a live broadcast from Central Saint Martins (accessible in-person and online) for the duration of the show.
 
-[As part of the physical show](){:class="object-scatter" data-object-scatter-target=".object-scatter-items-1" data-barba-prevent="self"}, the audience were invited to listen to the broadcast, whilst individual digital visualisations were played and a revolving installation of objects were uncovered simultaneously in the space. The audio was broadcast live and archived online.
+[As part of the physical show](){:class="object-scatter" data-object-scatter-target=".object-scatter-items-1" data-barba-prevent="self"} the audience were invited to listen to the broadcast whilst individual graphical visualisations played (responding to the interviewee’s voice), and a revolving installation of objects relating to each interview were uncovered simultaneously in the space. The audio was broadcast live from the GCD studios in Central Saint Martins and archived online.
 
-As part of the WIP show, we are not emphasising final work(s) but the discussion of our ideas and the diversity of both the nature of Communication Design and the group itself. 
+As part of the WIP show, the emphasis was not on the final work(s) themselves but the discussion of the ideas being worked through and on diversity – both of the nature of Communication Design and of the group itself.
 
-_Graphically Speaking_.
+_‘Graphically Speaking’_.
 
 <div class="object-scatter-items object-scatter-items-1">
 <img alt="A lit red light on the wall labelled On Air" data-src="/assets/images/26065726_145725319461101_2245030498550153216_n_17900740276088273.jpeg">
@@ -48,7 +48,7 @@ Graphic design by Aizhan Abdrakhmanova, [Mátyás Czél](https://czelmatyas.com/
 
 Web design and concept by [Lucy Maria](http://lucymaria.co.uk/){:target="_blank" rel="noopener"}, Jad Sawaya, [Mike Stevens](https://www.mikestevens.co.uk/){:target="_blank" rel="noopener"}. ([👋](){:class="object-scatter no-underline" data-object-scatter-target=".object-scatter-items-2" data-object-scatter-single="true" data-barba-prevent="self"})
 
-Updated archive and web development by Lucy Maria and Mike Stevens as part of [See, Also Studio](https://www.see-also.com/){:target="_blank" rel="noopener"} (2022).
+Updated archive and web development by Lucy Maria and Mike Stevens as part of [See, Also](https://www.see-also.com/){:target="_blank" rel="noopener"} (2022).
 
 <div class="object-scatter-items object-scatter-items-2">
 <img alt="Three chairs balanced on a folded table" data-src="/assets/images/MLJ.jpg">
