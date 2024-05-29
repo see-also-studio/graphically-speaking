@@ -10,9 +10,7 @@ lines:
   - "paul-oreilly-line-01.svg"
   - "naina-kulkarni-line-03.svg"
   - "dan-hopkinson-line-02.svg"
-  - "erin-peace-line-01.svg"
   - "eva-afifah-line-03.svg"
-  - "shiyun-he-line-01.svg"
   - "dina-bukva-line-02.svg"
 ---
 
