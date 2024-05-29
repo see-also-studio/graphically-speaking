@@ -24,6 +24,13 @@
       text-decoration-line: underline;
       text-decoration-style: dotted;
       text-decoration-thickness: 0.12em;
+      text-decoration-color: black;
+      transition-property: color;
+      transition-duration: 500ms;
+
+      &:hover {
+        color: blue;
+      }
     }
 
     &.back {

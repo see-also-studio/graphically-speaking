@@ -104,11 +104,18 @@
   > * + h2 {
     margin-top: 2rem;
   }
+}
 
-  a.object-scatter {
-    color: black;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 0.12em;
+a.object-scatter {
+  color: black;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 0.12em;
+  transition-property: color;
+  transition-duration: 500ms;
+  text-decoration-color: black;
+
+  &:hover {
+    color: blue;
   }
 }
 
