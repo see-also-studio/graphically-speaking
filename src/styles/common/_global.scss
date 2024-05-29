@@ -166,9 +166,11 @@ section {
 
   @include mq.mq($from: small) {
     top: 4vh;
+    right: 0;
+    bottom: 0;
     left: 10%;
-    width: 90%;
-    height: 80vh;
+    width: auto;
+    height: auto;
   }
 
   svg {
