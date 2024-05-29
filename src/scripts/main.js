@@ -118,6 +118,7 @@ document.querySelectorAll('.object-scatter').forEach(function(el) {
     const targetSelector = event.target.getAttribute('data-object-scatter-target');
     const targetEl = document.querySelector(targetSelector);
     const isSingle = event.target.getAttribute('data-object-scatter-single') == 'true' ? true : false;
-    objectScatter(targetEl, {centerSingleOnClick: isSingle, x: event.clientX, y: event.clientY, size: '25em'});
+    console.log(isSingle);
+    objectScatter(targetEl, (isSingle ? {centerSingleOnClick: isSingle, x: event.clientX, y: event.clientY}: {}));
   });
 });
