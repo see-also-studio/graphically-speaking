@@ -23,7 +23,7 @@ lines:
 
 [As part of the physical show](){:class="object-scatter" data-object-scatter-target=".object-scatter-items-1" data-barba-prevent="self"} the audience were invited to listen to the broadcast whilst individual graphical visualisations played (responding to the interviewee’s voice), as a revolving installation of objects relating to each interview were uncovered simultaneously in the space. The audio was broadcast live from the GCD studios in Central Saint Martins and archived online.
 
-As part of the WIP show, the emphasis was not on the final work(s) themselves but the discussion of the ideas being worked through and on diversity – both of the nature of Communication Design and of the group itself.
+As part of the WIP show, the emphasis was not on the final work(s) themselves but on both the discussion of the ideas being worked through and the diverse nature of Communication Design and the group itself.
 
 _‘Graphically speaking’_.
 
