@@ -43,7 +43,7 @@ Special thanks to David Charlesworth, Paul Cherry, Jeremy Keenan, Caroline List,
 
 Graphic design by Aizhan Abdrakhmanova, [Mátyás Czél](https://czelmatyas.com/){:target="_blank" rel="noopener"} and [Paula Šobat](https://www.paulasobat.com/){:target="_blank" rel="noopener"}.
 
-Web design and concept by [Lucy Maria](http://lucymaria.co.uk/){:target="_blank" rel="noopener"}, Jad Sawaya and [Mike Stevens](https://www.mikestevens.co.uk/){:target="_blank" rel="noopener"}. ([👋](){:class="object-scatter no-underline" data-object-scatter-target=".object-scatter-items-2" data-object-scatter-single="true" data-barba-prevent="self"})
+Web concept, design and development by [Lucy Maria](http://lucymaria.co.uk/){:target="_blank" rel="noopener"}, [Mike Stevens](https://www.mikestevens.co.uk/){:target="_blank" rel="noopener"} and Jad Sawaya. ([👋](){:class="object-scatter no-underline" data-object-scatter-target=".object-scatter-items-2" data-object-scatter-single="true" data-barba-prevent="self"})
 
 Updated archive and web development by Lucy Maria and Mike Stevens as part of [See, Also](https://www.see-also.com/){:target="_blank" rel="noopener"} (2022).
 

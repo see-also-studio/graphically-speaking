@@ -98,10 +98,12 @@ section {
 
   &--top {
     top: 0;
+    border-top: none;
   }
 
   &--bottom {
     bottom: 0;
+    border-bottom: none;
   }
 }
 
